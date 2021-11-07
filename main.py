@@ -350,7 +350,7 @@ def main():
     # Extract data from the data files into structured Python objects.
     # @timefunc  # time of completion
     def read_neo_db():
-        with open('data/NEODatabase_terminal_wrong_haza.pickle', 'rb') as f:
+        with open('NEODatabase.pickle', 'rb') as f:
             return pickle.load(f)
     neo_db = read_neo_db()
     database = neo_db
